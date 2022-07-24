@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:scrollbars="none"
+        android:background="#fff"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+
+            android:orientation="vertical">
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/nuinito_extrabold"-->
+<!--                android:text="Active Order"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:elevation="0dp"-->
+<!--                app:cardBackgroundColor="#fff"-->
+<!--                app:cardElevation="0dp"-->
+<!--                app:strokeColor="#ccc"-->
+<!--                app:strokeWidth="2dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:background="#fff"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView6"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/nuinito_semi_bold"-->
+<!--                        android:text="Order ID: #CD12DW"-->
+<!--                        android:textColor="#000" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:background="#ffff"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:src="@drawable/icon_shop_location" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:fontFamily="@font/nuinito_semi_bold"-->
+<!--                            android:text="Shop location"-->
+<!--                            android:textColor="@color/apptheme" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:background="#fff"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView7"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:src="@drawable/icon_material_location" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView8"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:fontFamily="@font/nuinito_semi_bold"-->
+<!--                            android:text="10 Boul Henry bourrassa o, h3l3n3, Montreal, Quebec"-->
+<!--                            android:textColor="#000" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="65dp"-->
+<!--                        android:background="#fff"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="2">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            app:cardBackgroundColor="#fff"-->
+<!--                            app:strokeColor="#979797"-->
+<!--                            app:strokeWidth="1dp">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:gravity="center"-->
+<!--                                android:text="Details"-->
+<!--                                android:textColor="#808080" />-->
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            app:cardBackgroundColor="@color/apptheme">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:gravity="center"-->
+<!--                                android:text="Direction"-->
+<!--                                android:textColor="#fff" />-->
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nuinito_extrabold"
+                android:text="Earning"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#039D55"
+                app:cardCornerRadius="5dp">
+
+                <ImageView
+                    android:id="@+id/history_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/vector_history"
+                    android:tint="#fff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/icon_material_wallet_white" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nuinito_semi_bold"
+                                    android:text="Balance"
+                                    android:textColor="#fff" />
+
+                                <TextView
+                                    android:id="@+id/home_wallet_balance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="@font/nuinito_extrabold"
+                                    android:text="----"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="3">-->
+
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1">-->
+
+<!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                android:layout_width="1dp"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginBottom="10dp"-->
+<!--                                android:background="#fff"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:id="@+id/linearLayout2"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center_vertical"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:orientation="vertical"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/textView17"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/nuinito_semi_bold"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="Balance"-->
+<!--                                    android:textColor="#fff" />-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/textView16"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginTop="2dp"-->
+<!--                                    android:fontFamily="@font/nuinito_extrabold"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="$70.0"-->
+<!--                                    android:textColor="#fff" />-->
+<!--                            </LinearLayout>-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1">-->
+
+<!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                android:layout_width="1dp"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginBottom="10dp"-->
+<!--                                android:background="#fff"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center_vertical"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:orientation="vertical"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/textView17"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/nuinito_semi_bold"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="Balance"-->
+<!--                                    android:textColor="#fff" />-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/textView16"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginTop="2dp"-->
+<!--                                    android:fontFamily="@font/nuinito_extrabold"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="$70.0"-->
+<!--                                    android:textColor="#fff" />-->
+<!--                            </LinearLayout>-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center_vertical"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:orientation="vertical"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/textView17"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:fontFamily="@font/nuinito_semi_bold"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="Balance"-->
+<!--                                    android:textColor="#fff" />-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/textView16"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginTop="2dp"-->
+<!--                                    android:fontFamily="@font/nuinito_extrabold"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="$70.0"-->
+<!--                                    android:textColor="#fff" />-->
+<!--                            </LinearLayout>-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                    </LinearLayout>-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nuinito_extrabold"
+                android:text="Orders"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#2E6D8B"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nuinito_extrabold"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="#fff"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/nuinito_semi_bold"
+                            android:gravity="center"
+                            android:text="Today"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/nuinito_semi_bold"
+                            android:gravity="center"
+                            android:text="Order"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#1C3DC6"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nuinito_extrabold"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="#fff"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/nuinito_semi_bold"
+                            android:gravity="center"
+                            android:text="Today"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/nuinito_semi_bold"
+                            android:gravity="center"
+                            android:text="Order"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#53B175">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#53B175"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nuinito_extrabold"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nuinito_semi_bold"
+                        android:gravity="center"
+                        android:text="Today"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nuinito_semi_bold"
+                        android:gravity="center"
+                        android:text="Order"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/home_withdraw_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="@color/apptheme"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/gilroy_semibold"
+                    android:text="Withdraw wallet balance"
+                    android:textColor="#fff" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

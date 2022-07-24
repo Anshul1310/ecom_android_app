@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anstudios.freshjoy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/main_app_logo_playtore"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/main_app_logo_playtore_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FreshJoy"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContactUsPage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategoryProducts"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrdersPage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderPlaced"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UploadInfo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThankYou"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtpVerification"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
