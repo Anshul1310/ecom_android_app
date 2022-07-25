@@ -146,9 +146,12 @@ public class adapterCart extends RecyclerView.Adapter<adapterCart.holder> {
         );
 //            CartFragment.totalPrice.setText(("Rs.") + Math.ceil((deleiveryChargeInt + stInt) - realOff) + "");
 
-        CartFragment.totalPrice.setText("Rs. "+stInt+"");
+        double serviceCharge=(CartFragment.rate/100)*stInt;
+        CartFragment.deliveryCharge.setText(Math.ceil(serviceCharge)+"");
+        double total=serviceCharge+stInt;
+        CartFragment.totalPrice.setText(Math.ceil(total)+"");
         if (arrayList.size() == 0) {
-            CartFragment.totalPrice.setText("Rs." + "0.00");
+            CartFragment.totalPrice.setText("0.00");
 
         }
 

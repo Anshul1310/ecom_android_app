@@ -87,7 +87,7 @@
         android:layout_marginTop="50dp"
         android:fontFamily="@font/monsterrat_semibold"
         android:gravity="center"
-        android:text="@string/please_feel_free_to_contact_us_on_91_8097777676_if_you_have_any_questions_or_concerns"
+        android:text="@string/please_feel_free_to_contact_us_on_91_1234567890_if_you_have_any_questions_or_concerns"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

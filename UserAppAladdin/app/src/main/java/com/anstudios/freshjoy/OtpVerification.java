@@ -93,7 +93,7 @@ public class OtpVerification extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         PhoneAuthOptions options =
                 PhoneAuthOptions.newBuilder(FirebaseAuth.getInstance())
-                        .setPhoneNumber("+251" + phoneno)       // Phone number to verify
+                        .setPhoneNumber("+91" + phoneno)       // Phone number to verify
                         .setTimeout(120L, TimeUnit.SECONDS) // Timeout and unit
                         .setActivity(this)                 // Activity (for callback binding)
                         .setCallbacks(new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {

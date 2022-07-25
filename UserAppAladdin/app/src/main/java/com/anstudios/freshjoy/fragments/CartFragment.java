@@ -22,10 +22,12 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.anstudios.freshjoy.Constant;
+import com.anstudios.freshjoy.ContactUsPage;
 import com.anstudios.freshjoy.MainActivity;
 import com.anstudios.freshjoy.PaymentActivity;
 import com.anstudios.freshjoy.R;
 import com.anstudios.freshjoy.SplashScreen;
+import com.anstudios.freshjoy.UploadInfo;
 import com.anstudios.freshjoy.adapters.adapterCart;
 import com.anstudios.freshjoy.models.HashmapSaver;
 import com.anstudios.freshjoy.models.modelCart;
@@ -76,12 +78,10 @@ public class CartFragment extends Fragment {
             recyclerView.setAdapter(adapter);
             order = new HashMap<>();
             continueBtn = view.findViewById(R.id.cart_proceed_btn);
-            continueBtn.setEnabled(false);
             subtotal = view.findViewById(R.id.cart_subtotal_price);
             deliveryCharge = view.findViewById(R.id.delivery_charge_price);
             totalPrice = view.findViewById(R.id.cart_total_price);
             getDataDelivery();
-            getData();
 //            applyBtn.setOnClickListener(new View.OnClickListener() {
 //                @Override
 //                public void onClick(View v) {
@@ -159,6 +159,9 @@ public class CartFragment extends Fragment {
                             object.setUserId(SplashScreen.sharedPreferences.getString("id", ""));
                             object.setTotalPrice(totalPrice.getText().toString()
                                     .replace("Rs. ", "")
+                                    .replace(".00","")
+                                    .replace(".0","")
+                                    .replace("Rs.","")
                             );
                             if (Integer.parseInt(object.getTotalPrice()) >= 499) {
                                 Gson gson = new Gson();
@@ -185,21 +188,27 @@ public class CartFragment extends Fragment {
         return view;
     }
 
+    public static double rate;
     private void getDataDelivery() {
-        try {
-            FirebaseFirestore.getInstance().collection("adminSettings")
-                    .document("deliverySettings")
-                    .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                @Override
-                public void onSuccess(@NonNull DocumentSnapshot documentSnapshot) {
-                    String charge = (String) documentSnapshot.getData().get("deliveryCharge");
-                    deliveryCharge.setText("Rs." + charge + ".00");
-                    continueBtn.setEnabled(true);
-                }
-            });
-        } catch (Exception exception) {
-            Toast.makeText(getContext(), exception.getMessage(), Toast.LENGTH_SHORT).show();
-        }
+
+        String url = Constant.baseUrl + "settings/rate";
+        RequestQueue queue = Volley.newRequestQueue(getContext());
+        StringRequest request = new StringRequest(Request.Method.GET, url, new com.android.volley.Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                rate=Double.parseDouble(response);
+                getData();
+
+            }
+        }, new com.android.volley.Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+
+        });
+
+        queue.add(request);
 
     }
 
