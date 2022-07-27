@@ -95,20 +95,14 @@ public class HomeFragment extends Fragment {
     }
 
     private void getBannerImages() {
-        FirebaseFirestore.getInstance().collection("adminSettings")
-                .document("bannersSetting")
-                .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-            @Override
-            public void onSuccess(@NonNull DocumentSnapshot documentSnapshot) {
-                HashMap<String, Object> hashMap = (HashMap<String, Object>) documentSnapshot.getData();
-                for (int i = 1; i <= hashMap.size(); i++) {
-                    if (!hashMap.get("banner" + i).toString().equals("no image")) {
-                        slideModelList.add(new SlideModel(hashMap.get("banner" + i).toString(), ScaleTypes.CENTER_CROP));
-                    }
-                }
-                imageSlider.setImageList(slideModelList);
-            }
-        });
+
+        slideModelList.add(new SlideModel(Constant.banner1, ScaleTypes.CENTER_CROP));
+        slideModelList.add(new SlideModel(Constant.banner2, ScaleTypes.CENTER_CROP));
+        slideModelList.add(new SlideModel(Constant.banner3, ScaleTypes.CENTER_CROP));
+        slideModelList.add(new SlideModel(Constant.banner4, ScaleTypes.CENTER_CROP));
+        slideModelList.add(new SlideModel(Constant.banner5, ScaleTypes.CENTER_CROP));
+        slideModelList.add(new SlideModel(Constant.banner6, ScaleTypes.CENTER_CROP));
+        imageSlider.setImageList(slideModelList);
     }
 
     private void showCatgeory() {
